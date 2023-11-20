@@ -15,5 +15,5 @@ use App\Http\Controllers\AnimeController;
 
 
 
-Route::get('/', [AnimeController::class, 'index'])->name('accueil');
-Route::get('/details/{id}', [AnimeController::class, 'details'])->name('details');
+Route::get('/','AnimeController@index')->name('welcome');
+Route::get('/details','AnimeController@details')->name('details');
